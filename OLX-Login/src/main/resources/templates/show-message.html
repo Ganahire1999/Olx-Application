@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2> Messages for the user <span th:text="${name}"></span></h2>
+Time : <span th:text="${time}"></span> <br>
+
+<o1>
+<li>
+ * 1. add spring boot security starter 
+ * will generate password for you
+ * 
+ * 2. in application.properties : give user 
+ * name annd password
+ * 
+ * 3. create security config : overried 
+ * authentication, authorization 
+ * 4. give user deatails service 
+ * (autowired) 
+ * 5. Creat UserDetailsSericeimpl 
+ * (@Service) return userDetails
+</li>
+</o1>
+  
+<p th:text="${messages}"> </p>
+
+</body>
+</html>

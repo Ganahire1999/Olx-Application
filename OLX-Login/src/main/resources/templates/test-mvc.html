@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html  xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> Page for testing MVC</h1>
+CAN NOT SHOW DATA DYNMICALLY (Program Yes Yes Yes) <br>
+<h3> this page will show the data passed to it by controller</h3>
+<h4 th:text="${name}"></h4>
+<ol>
+	<li> add thymeleaf dependency </li>
+	<li> create controller (not rest controller)</li>
+	<li> arguments ModelMap modelMap</li>
+	<li> add values in modelMap </li>
+	<li> reutrn the name of page (.html is added by thymeleaf)</li>
+	<li> add thymeleaf namespace in the html tag </li>
+	<li> in html show the data using < span th:text="${name}">< /span> </li>
+	
+</ol>
+<p th:text="${allusers}"></p>
+</body>
+</html>
